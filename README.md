@@ -1,9 +1,9 @@
-flutter app that show latest news by categories
-with the ability to search and switch to dark mode
-done by :
-bloc
-cubits 
-shared preferences for the dark mode
+flutter app that show latest news by categories  
+with the ability to search and switch to dark mode  
+done by :  
+bloc  
+cubits   
+shared preferences for the dark mode  
 
 API : https://newsapi.org/
 
