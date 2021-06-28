@@ -1,16 +1,17 @@
-# news_reader
+flutter app that show latest news by categories
+with the ability to search and switch to dark mode
+done by :  
 
-A new Flutter application.
+bloc
+cubits 
+shared preferences for the dark mode
 
-## Getting Started
+API : https://newsapi.org/
 
-This project is a starting point for a Flutter application.
+<h1>Home screen</h1>	
+  <img src="https://user-images.githubusercontent.com/45540581/123581727-c69eb980-d7dc-11eb-82e3-6be3a391d01b.png" width="256" height="455">  
+<h1>Dark Mode</h1>	
+  <img src="https://user-images.githubusercontent.com/45540581/123581764-dddda700-d7dc-11eb-93c9-d531c95f9bd6.png" width="256" height="455">  
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h1>Search Screen</h1>	
+  <img src="https://user-images.githubusercontent.com/45540581/123581798-ea61ff80-d7dc-11eb-8080-56fb41364bf9.png" width="256" height="455">  
