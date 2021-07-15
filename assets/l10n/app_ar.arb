@@ -1,0 +1,12 @@
+{
+  "news": "أخبار",
+  "business": "أعمال",
+  "technology": "تكنولوجيا",
+  "general": "عام",
+  "science": "علوم",
+  "health": "صحة",
+  "entertainment": "ترفية",
+  "sports": "رياضة",
+  "noImage": "لاتوجد صورة"
+
+}

@@ -1,0 +1,12 @@
+{
+    "news": "News",
+    "business": "BUSINESS",
+    "technology": "TECHNOLOGY",
+    "general": "GENERAL",
+    "science": "SCIENCE",
+    "health": "HEALTH",
+    "entertainment": "ENTERTAINMENT",
+    "sports": "SPORTS",
+    "noImage": "No image available"
+
+}
