@@ -8,6 +8,7 @@ import 'package:news_reader/shared/bloc_observer.dart';
 import 'package:news_reader/shared/network/local/cache_helper.dart';
 import 'package:news_reader/shared/network/remote/dio_helper.dart';
 import 'package:news_reader/shared/styles/themes.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 Future<void> main () async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,6 +39,8 @@ builder: (context, state){
       darkTheme: darkTheme,
       themeMode: AppCubit.get(context).isDark ? ThemeMode.light : ThemeMode.dark,
       home: DiscoverScreen(),
+    localizationsDelegates: AppLocalizations.localizationsDelegates,
+    supportedLocales: AppLocalizations.supportedLocales,
   );
 },
       ),

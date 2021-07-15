@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_reader/layout/cubit/cubit.dart';
 import 'package:news_reader/layout/cubit/states.dart';
 import 'package:news_reader/modules/web_view/web_view_screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 
 
@@ -50,7 +51,7 @@ Widget buildArticleItem(article, context) => SafeArea(
                     image:'${article['urlToImage']}',
                     placeholder:'assets/images/placeholder.jpg',
                     imageErrorBuilder: (context, error, stackTrace) {
-                      return Center(child: Text('No image available'));
+                      return Center(child: Text(AppLocalizations.of(context)!.noImage));
                     },
                   ),
                 ),

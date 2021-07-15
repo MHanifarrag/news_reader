@@ -6,6 +6,7 @@ import 'package:news_reader/layout/cubit/cubit.dart';
 import 'package:news_reader/layout/cubit/states.dart';
 import 'package:news_reader/modules/search/search_screen.dart';
 import 'package:news_reader/shared/components/components.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class DiscoverScreen extends StatelessWidget {
 
@@ -13,6 +14,7 @@ class DiscoverScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     var getNewsCubit = NewsCubit.get(context);
+var localization =AppLocalizations.of(context)!;
 
     return BlocConsumer<NewsCubit, NewsStates>(
       listener: (context, state) {},
@@ -22,7 +24,7 @@ class DiscoverScreen extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.grey.shade200,
           appBar: AppBar(
-            title: Text('News',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0)),
+            title: Text(localization.news,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0)),
             elevation: 0,
             actions: [
               IconButton(
@@ -42,13 +44,13 @@ class DiscoverScreen extends StatelessWidget {
             bottom: TabBar(
               isScrollable: true,
               tabs: [
-                tabTitle(title: 'BUSINESS'),
-                tabTitle(title: 'TECHNOLOGY'),
-                tabTitle(title: 'GENERAL'),
-                tabTitle(title: 'SCIENCE'),
-                tabTitle(title: 'HEALTH'),
-                tabTitle(title: 'ENTERTAINMENT'),
-                tabTitle(title: 'SPORTS'),
+                tabTitle(title: localization.business),
+                tabTitle(title: localization.technology),
+                tabTitle(title: localization.general),
+                tabTitle(title: localization.science),
+                tabTitle(title: localization.health),
+                tabTitle(title: localization.entertainment),
+                tabTitle(title: localization.sports),
               ],
             ),
           ),
